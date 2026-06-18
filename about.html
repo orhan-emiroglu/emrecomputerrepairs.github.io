@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
   <title>About | Emre Computer Repairs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo-wrap">
-      <svg class="logo-svg" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="36" cy="36" r="36" fill="#003A75"/>
-        <rect x="14" y="18" width="44" height="26" rx="3" fill="#0057A8" stroke="#FFD700" stroke-width="2"/>
-        <rect x="18" y="22" width="36" height="18" rx="1" fill="#001a3a"/>
-        <rect x="28" y="44" width="16" height="3" fill="#FFD700"/>
-        <rect x="24" y="47" width="24" height="2" rx="1" fill="#FFD700"/>
-        <circle cx="52" cy="24" r="3" fill="#FFD700"/>
-        <line x1="36" y1="27" x2="36" y2="36" stroke="#FFD700" stroke-width="2"/>
-        <line x1="31" y1="31" x2="41" y2="31" stroke="#FFD700" stroke-width="2"/>
-      </svg>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">💻</div>
+        <div class="logo-text">
+          <strong><span>EMRE</span> COMPUTER REPAIRS</strong>
+          <small>Professional IT Support UK</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" >Home</a>
+        <a href="services.html" >Services</a>
+        <a href="pricing.html" >Pricing</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html"  class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="header-text">
-      <h1><span>EMRE</span> COMPUTER REPAIRS</h1>
-      <p>COMPUTER REPAIRS &amp; MAINTENANCE &nbsp;|&nbsp; www.emrecomputerrepairs.co.uk</p>
-    </div>
-    <div class="header-contact">
-      <a href="tel:07944405398">📞 07944 405 3998</a>
-      <small>emreaslann@hotmail.com</small>
-    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html" >Home</a>
+      <a href="services.html" >Services</a>
+      <a href="pricing.html" >Pricing</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html" >Contact Us</a>
+    </nav>
+  </header>
+  <script>document.getElementById("hamburger").addEventListener("click",function(){this.classList.toggle("open");document.getElementById("mobile-nav").classList.toggle("open");});</script>
+<section class="hero" style="padding:50px 20px 44px;">
+  <div class="hero-inner">
+    <div class="hero-badge">👋 Who We Are</div>
+    <h2>About <span>Us</span></h2>
+    <p>Friendly, reliable computer repairs you can trust.</p>
   </div>
-</header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a></nav>
+</section>
 <main>
-  <h2 class="section-title">About <span>Us</span></h2>
-  <p class="section-sub">Friendly, reliable computer repairs you can trust.</p>
-  <div class="about-text">
-    <p>Emre Computer Repairs is a UK-based IT support service helping home users and small businesses keep their computers running smoothly. We offer fast turnaround, honest pricing and clear communication from start to finish.</p>
-    <p>We believe computer repairs should be simple and stress-free. No jargon, no surprise bills — just fast, professional service from a technician who genuinely cares about getting your device working again.</p>
-    <h3>Why Choose Us?</h3>
-    <ul class="why-list">
-      <li>Transparent pricing — you know the cost before we start</li>
-      <li>No fix, no charge on diagnostic assessments</li>
-      <li>Fast turnaround — most repairs completed same or next day</li>
-      <li>Home visits available within 25 and 35 miles</li>
-      <li>Remote support available — no need to leave your home</li>
-      <li>Friendly, jargon-free advice every step of the way</li>
-      <li>Experienced with Windows PCs, laptops and Mac OS</li>
-    </ul>
-    <h3>Coverage</h3>
-    <p>We offer home visits, in-store drop-off and remote support across the UK. On-site visits within 25 and 35 miles. <a href="contact.html" style="color:var(--blue);">Get in touch</a> to find out what works best for you.</p>
-  </div>
+  <section class="block">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Professional IT <span>Support</span></h2>
+        <p>Emre Computer Repairs is a UK-based IT support service helping home users and small businesses keep their computers running smoothly. We offer fast turnaround, honest pricing and clear communication from start to finish.</p>
+        <p>We believe computer repairs should be simple and stress-free. No jargon, no surprise bills — just fast, professional service from a technician who genuinely cares about getting your device working again.</p>
+        <h3>Why Choose Us?</h3>
+        <ul class="why-list">
+          <li>Transparent pricing — you know the cost before we start</li>
+          <li>No fix, no charge on diagnostic assessments</li>
+          <li>Fast turnaround — most repairs same or next day</li>
+          <li>Home visits within 25 and 35 miles</li>
+          <li>Remote support — no need to leave your home</li>
+          <li>Friendly, jargon-free advice throughout</li>
+          <li>Experienced with Windows PCs, laptops &amp; Mac OS</li>
+        </ul>
+      </div>
+      <div>
+        <div class="about-cta-box">
+          <h3>Ready to Get Started?</h3>
+          <p>Call us or send a message and we'll get your computer sorted. We aim to respond within a few hours.</p>
+          <a href="contact.html" class="btn-primary">Contact Us Today</a>
+        </div>
+        <div class="stats" style="margin-top:20px; border-radius:8px;">
+          <div><span class="stat-num">£30</span><span class="stat-label">Diagnosis</span></div>
+          <div><span class="stat-num">35mi</span><span class="stat-label">Coverage</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
-<footer>
-  <p class="footer-brand"><span>EMRE</span> COMPUTER REPAIRS</p>
-  <p>📞 <a href="tel:07944405398">07944 405 3998</a> &nbsp;|&nbsp; ✉️ <a href="mailto:emreaslann@hotmail.com">emreaslann@hotmail.com</a></p>
-  <p style="margin-top:8px;">&copy; 2025 Emre Computer Repairs. All rights reserved.</p>
-</footer>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong><span>EMRE</span> COMPUTER REPAIRS</strong>
+        <p>Professional computer repairs &amp; IT support for home and office customers across the UK.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:07944405398">07944 405 3998</a></p>
+        <p style="margin-top:8px;">✉️ <a href="mailto:emreaslann@hotmail.com">emreaslann@hotmail.com</a></p>
+        <p style="margin-top:8px;">🌐 www.emrecomputerrepairs.co.uk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Emre Computer Repairs. All rights reserved.</div>
+  </footer>
 </body>
 </html>
