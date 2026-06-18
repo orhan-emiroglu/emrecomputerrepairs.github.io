@@ -1,94 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
   <title>Pricing | Emre Computer Repairs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <div class="header-inner">
-    <div class="logo-wrap">
-      <svg class="logo-svg" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="36" cy="36" r="36" fill="#003A75"/>
-        <rect x="14" y="18" width="44" height="26" rx="3" fill="#0057A8" stroke="#FFD700" stroke-width="2"/>
-        <rect x="18" y="22" width="36" height="18" rx="1" fill="#001a3a"/>
-        <rect x="28" y="44" width="16" height="3" fill="#FFD700"/>
-        <rect x="24" y="47" width="24" height="2" rx="1" fill="#FFD700"/>
-        <circle cx="52" cy="24" r="3" fill="#FFD700"/>
-        <line x1="36" y1="27" x2="36" y2="36" stroke="#FFD700" stroke-width="2"/>
-        <line x1="31" y1="31" x2="41" y2="31" stroke="#FFD700" stroke-width="2"/>
-      </svg>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">💻</div>
+        <div class="logo-text">
+          <strong><span>EMRE</span> COMPUTER REPAIRS</strong>
+          <small>Professional IT Support UK</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" >Home</a><a href="services.html" >Services</a><a href="pricing.html" class="active">Pricing</a><a href="about.html" >About</a><a href="contact.html"  class="nav-cta">Contact Us</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
-    <div class="header-text">
-      <h1><span>EMRE</span> COMPUTER REPAIRS</h1>
-      <p>COMPUTER REPAIRS &amp; MAINTENANCE &nbsp;|&nbsp; www.emrecomputerrepairs.co.uk</p>
-    </div>
-    <div class="header-contact">
-      <a href="tel:07944405398">📞 07944 405 3998</a>
-      <small>emreaslann@hotmail.com</small>
-    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html" >Home</a><a href="services.html" >Services</a><a href="pricing.html" class="active">Pricing</a><a href="about.html" >About</a><a href="contact.html" >Contact Us</a>
+    </nav>
+  </header>
+  <script>document.getElementById("hamburger").addEventListener("click",function(){this.classList.toggle("open");document.getElementById("mobile-nav").classList.toggle("open");});</script>
+<section class="hero" style="padding:50px 20px 44px;">
+  <div class="hero-inner">
+    <div class="hero-badge">💷 Transparent Pricing</div>
+    <h2>No Hidden <span>Fees</span></h2>
+    <p>You know the cost before we start. Parts are quoted separately where applicable.</p>
   </div>
-</header>
-<nav><a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html" class="active">Pricing</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+</section>
 <main>
-  <h2 class="section-title">Transparent <span>Pricing</span></h2>
-  <p class="section-sub">No hidden fees. You know the cost before we start. Parts quoted separately where applicable.</p>
-
-  <div class="price-section-intro">
-    <div class="price-highlight"><span class="big">£30</span><span class="label">Diagnosis</span></div>
-    <div class="price-highlight gold"><span class="big">FREE</span><span class="label">If repair authorised</span></div>
-    <div class="price-highlight"><span class="big">£75</span><span class="label">On-Site (25mi)</span></div>
-    <div class="price-highlight"><span class="big">£50</span><span class="label">Remote Full</span></div>
-    <div class="price-highlight gold"><span class="big">£30</span><span class="label">Remote Half</span></div>
-  </div>
-
-  <table class="price-table">
-    <thead><tr><th>Service</th><th>Price</th></tr></thead>
-    <tbody>
-      <tr class="cat-row"><td colspan="2">🔍 Diagnosis &amp; Visits</td></tr>
-      <tr><td>In Store or On-Site Diagnosis<small>FREE if customer authorises the repair</small></td><td>£30.00</td></tr>
-      <tr><td>On-Site Service Fee — Within 25 miles<small>Fee charged on arrival. Includes diagnostics only. Parts &amp; labour extra. Each additional hour: £35</small></td><td>£75.00</td></tr>
-      <tr><td>On-Site Service Fee — Within 35 miles<small>Each additional hour: £35.00</small></td><td>£95.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">💻 Software &amp; OS</td></tr>
-      <tr><td>Reinstallation of OS<small>Reload Windows or Mac OS with updates. No other programs included.</small></td><td>£50.00</td></tr>
-      <tr><td>Speed Package A<small>Standard cleaning: registry, unnecessary files, fans, keyboards, screens, startup menu</small></td><td>£40.00</td></tr>
-      <tr><td>Speed Package B<small>Everything in Package A plus reformatting hard drive and reinstalling software</small></td><td>£30.00</td></tr>
-      <tr><td>Virus Removal<small>Removal of viruses only. Does not include extra time for startup or performance issues.</small></td><td>£45.00</td></tr>
-      <tr><td>Software Installation<small>Per program</small></td><td>£25.00</td></tr>
-      <tr><td>Printer Setup (Remote)</td><td>£30.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">🔧 Hardware &amp; Upgrades</td></tr>
-      <tr><td>Hardware Installation<small>Graphics card, sound card, network card, wireless card, DVD drive, etc.</small></td><td>£25.00</td></tr>
-      <tr><td>Memory Upgrade<small>Parts not included</small></td><td>£25.00</td></tr>
-      <tr><td>Hard Drive Upgrade<small>Includes cloning old drive and installing new one. Parts not included.</small></td><td>£70.00</td></tr>
-      <tr><td>Motherboard Installation<small>Parts not included</small></td><td>£90.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">💾 Data &amp; Recovery</td></tr>
-      <tr><td>Data Backup<small>Backup to external hard drive. You can provide the drive or we can supply one at extra charge.</small></td><td>£40.00</td></tr>
-      <tr><td>Data Recovery<small>Recover lost/deleted files. The longer since deletion, the harder recovery becomes.</small></td><td>£65.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">🌐 Network</td></tr>
-      <tr><td>Setup Wireless Network<small>Does not include on-site fee</small></td><td>£45.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">💻 Laptop Repairs</td></tr>
-      <tr><td>Laptop Screen Repair<small>Parts not included</small></td><td>£80.00</td></tr>
-      <tr><td>Laptop Keyboard Repair<small>Parts not included</small></td><td>£35.00</td></tr>
-      <tr><td>Laptop Power Jack Repair<small>Parts not included</small></td><td>£65.00</td></tr>
-
-      <tr class="cat-row"><td colspan="2">🌐 Remote Support</td></tr>
-      <tr><td>Remote Service — Full<small>Complete diagnostic and repair up to 1 hour</small></td><td>£50.00</td></tr>
-      <tr><td>Remote Service — Half<small>Quick fix or 30 minutes of support</small></td><td>£30.00</td></tr>
-    </tbody>
-  </table>
-  <p class="price-note">⚠️ All prices are for labour only unless stated. Parts are quoted separately before any work begins. Prices may vary depending on complexity. <a href="contact.html">Contact us</a> for a free no-obligation quote.</p>
+  <section class="block">
+    <p class="section-label">Price List</p>
+    <h2 class="section-title">Our <span>Rates</span></h2>
+    <p class="section-sub">All prices are for labour only unless stated. Parts quoted separately before any work begins.</p>
+    <div class="price-highlights">
+      <div class="ph-card"><span class="ph-price">£30</span><span class="ph-label">Diagnosis</span></div>
+      <div class="ph-card gold"><span class="ph-price">FREE</span><span class="ph-label">If Repair Authorised</span></div>
+      <div class="ph-card"><span class="ph-price">£75</span><span class="ph-label">On-Site (25mi)</span></div>
+      <div class="ph-card"><span class="ph-price">£95</span><span class="ph-label">On-Site (35mi)</span></div>
+      <div class="ph-card gold"><span class="ph-price">£50</span><span class="ph-label">Remote Full</span></div>
+      <div class="ph-card"><span class="ph-price">£30</span><span class="ph-label">Remote Half</span></div>
+    </div>
+    <table class="price-table">
+      <thead><tr><th>Service</th><th>Price</th></tr></thead>
+      <tbody>
+        <tr class="cat-row"><td colspan="2">🔍 Diagnosis &amp; On-Site</td></tr>
+        <tr><td>In Store or On-Site Diagnosis<small>FREE if customer authorises the repair</small></td><td>£30.00</td></tr>
+        <tr><td>On-Site Fee — Within 25 miles<small>Includes diagnostics only. Parts &amp; labour extra. Extra hour: £35</small></td><td>£75.00</td></tr>
+        <tr><td>On-Site Fee — Within 35 miles<small>Each additional hour: £35.00</small></td><td>£95.00</td></tr>
+        <tr class="cat-row"><td colspan="2">💻 Software &amp; OS</td></tr>
+        <tr><td>OS Reinstallation<small>Windows or Mac OS with updates. No other programs included.</small></td><td>£50.00</td></tr>
+        <tr><td>Speed Package A<small>Registry clean, unnecessary files, fans, keyboards, screens, startup menu</small></td><td>£40.00</td></tr>
+        <tr><td>Speed Package B<small>Everything in A plus reformatting hard drive and reinstalling software</small></td><td>£30.00</td></tr>
+        <tr><td>Virus Removal<small>Removal of viruses only. Does not include extra time for startup/performance.</small></td><td>£45.00</td></tr>
+        <tr><td>Software Installation<small>Per program</small></td><td>£25.00</td></tr>
+        <tr><td>Printer Setup (Remote)</td><td>£30.00</td></tr>
+        <tr class="cat-row"><td colspan="2">🔧 Hardware &amp; Upgrades</td></tr>
+        <tr><td>Hardware Installation<small>Graphics card, sound card, network card, wireless card, DVD drive, etc.</small></td><td>£25.00</td></tr>
+        <tr><td>Memory Upgrade<small>Parts not included</small></td><td>£25.00</td></tr>
+        <tr><td>Hard Drive Upgrade<small>Includes cloning old drive. Parts not included.</small></td><td>£70.00</td></tr>
+        <tr><td>Motherboard Installation<small>Parts not included</small></td><td>£90.00</td></tr>
+        <tr class="cat-row"><td colspan="2">💾 Data</td></tr>
+        <tr><td>Data Backup<small>To external hard drive. You can provide the drive or we supply one at extra charge.</small></td><td>£40.00</td></tr>
+        <tr><td>Data Recovery<small>Recover lost/deleted files. The longer since deletion, the harder recovery becomes.</small></td><td>£65.00</td></tr>
+        <tr class="cat-row"><td colspan="2">📶 Network</td></tr>
+        <tr><td>Wireless Network Setup<small>Does not include on-site fee</small></td><td>£45.00</td></tr>
+        <tr class="cat-row"><td colspan="2">💻 Laptop Repairs</td></tr>
+        <tr><td>Laptop Screen Repair<small>Parts not included</small></td><td>£80.00</td></tr>
+        <tr><td>Laptop Keyboard Repair<small>Parts not included</small></td><td>£35.00</td></tr>
+        <tr><td>Laptop Power Jack Repair<small>Parts not included</small></td><td>£65.00</td></tr>
+        <tr class="cat-row"><td colspan="2">🌐 Remote Support</td></tr>
+        <tr><td>Remote Service — Full<small>Complete diagnostic and repair up to 1 hour</small></td><td>£50.00</td></tr>
+        <tr><td>Remote Service — Half<small>Quick fix or 30 minutes of support</small></td><td>£30.00</td></tr>
+      </tbody>
+    </table>
+    <p class="price-note">⚠️ All prices are for labour only unless stated. Parts are quoted separately before any work begins. Prices may vary depending on complexity. <a href="contact.html">Contact us</a> for a free no-obligation quote.</p>
+  </section>
 </main>
-<footer>
-  <p class="footer-brand"><span>EMRE</span> COMPUTER REPAIRS</p>
-  <p>📞 <a href="tel:07944405398">07944 405 3998</a> &nbsp;|&nbsp; ✉️ <a href="mailto:emreaslann@hotmail.com">emreaslann@hotmail.com</a></p>
-  <p style="margin-top:8px;">&copy; 2025 Emre Computer Repairs. All rights reserved.</p>
-</footer>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong><span>EMRE</span> COMPUTER REPAIRS</strong>
+        <p>Professional computer repairs &amp; IT support for home and office customers across the UK.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:07944405398">07944 405 3998</a></p>
+        <p style="margin-top:8px;">✉️ <a href="mailto:emreaslann@hotmail.com">emreaslann@hotmail.com</a></p>
+        <p style="margin-top:8px;">🌐 www.emrecomputerrepairs.co.uk</p>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Emre Computer Repairs. All rights reserved.</div>
+  </footer>
 </body>
 </html>
